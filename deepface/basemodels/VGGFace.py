@@ -84,7 +84,7 @@ def baseModel():
 
 
 def loadModel(
-    url="https://drive.google.com/uc?id=1yboiKXgQghW_9k4aYlLOLH1LC_x8RCvn",
+    url="https://github.com/chan-eee/deepface/vgg_face_weights.h5",
 ):
 
     model = baseModel()
