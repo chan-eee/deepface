@@ -84,7 +84,7 @@ def baseModel():
 
 
 def loadModel(
-    url="https://github.com/chan-eee/deepface/vgg_face_weights.h5",
+    url="https://drive.google.com/file/d/11oAX-bG_zyVvuZOD-4efcJN6a5brWNbH/view?usp=sharing",
 ):
 
     model = baseModel()
@@ -92,8 +92,8 @@ def loadModel(
     # -----------------------------------
 
     home = functions.get_deepface_home()
-    # output = home + "/.deepface/weights/vgg_face_weights.h5"
-    output = "/root/.deepface/weights/vgg_face_weights.h5"
+    output = home + "/.deepface/weights/vgg_face_weights.h5"
+    # output = "/root/.deepface/weights/vgg_face_weights.h5"
     if os.path.isfile(output) != True:
         print("vgg_face_weights.h5 will be downloaded...")
         gdown.download(url, output, quiet=False)
